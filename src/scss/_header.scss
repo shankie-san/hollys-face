@@ -1,0 +1,29 @@
+.site-header {
+  text-align: center;
+  .splash {
+    font-size: 3rem;
+    @include media(momma) {
+      font-size: 5rem;
+    }
+  }
+}
+
+.splash {
+  font-family: "Fontdiner Swanky", cursive;
+  text-align: center;
+  width: 100%;
+  font-size: 5rem;
+  color: green;
+  margin: 0;
+  line-height: 1;
+  @include media(poppa) {
+    padding-top: 1em;
+  }
+}
+
+.header-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}

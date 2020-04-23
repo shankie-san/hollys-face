@@ -1,0 +1,99 @@
+@import "fonts";
+@import "breakpoints";
+@import "modal";
+@import "header";
+
+* {
+  box-sizing: border-box;
+}
+
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/holly.png");
+  padding: 1em;
+  background-size: 8em;
+  background-color: green;
+}
+
+.puzzle-wrapper {
+  background-color: white;
+  border: double 1rem red;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  max-width: 100%;
+}
+
+.button-faceNew {
+  margin-top: 1em;
+}
+
+.firing-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h4 {
+    margin: 0.5rem;
+  }
+}
+
+.puzzle-instructions {
+  font-family: "Sigmar One", cursive;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+button {
+  background-color: green;
+  color: white;
+  font-size: large;
+  padding: 0.5em 1em;
+  border: 0.5em outset red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.getStarted-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.siteFooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  text-align: center;
+  background-color: black;
+  button {
+    background-color: transparent;
+    color: white;
+    border: solid thin white;
+    font-size: x-small;
+  }
+}
+
+.loginForm {
+  label {
+    display: block;
+  }
+  [type="email"] {
+    border: solid thin;
+    padding: 0.5em;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  [type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+  }
+}
